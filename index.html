@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--      Page  Title   -->
+	<title>BookStore</title>
+
+	<!--        Meta tags    -->
+	<meta charset="utf-8" />
+	<meta name="author" content="Suzana" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<!--	Links -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="img/favicon-book.ico" sizes="16x16 32x32" type="image/ico" />
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+	<!--	Header   -->
+	<header>
+		<div class="wrapp">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.jpeg" alt="logo" />
+				</a>
+				<span class="title">Book Store</span>
+			</div>
+			<div class="search">
+				<input type="text" id="searchValue" placeholder="Search...">
+				<select id="categorySearch">
+					<option value="0">All categories</option>
+				</select>
+			</div>
+			<nav>
+				<a href="#" onclick="showCatalog();">Shop</a>
+				<a href="#" onclick="showCart();"><i class="fab fa-opencart"></i>Cart</a>
+				<span id="total">Total: 0</span>
+			</nav>
+		</div>
+	</header>
+	<!--	Main    -->
+	<main>
+		<div class="wrapp">
+			<div class="addNewBook">
+				<label class="inputFile">Browse image
+					<input type="file" id="imgUrl" size="60">
+				</label>
+				<label>Price:
+					<br>
+					<input type="number" id="price" min="0">
+				</label>
+				<label>Title:
+					<br>
+					<input type="text" id="title" required>
+				</label>
+				<label>Category:
+					<select id="category"></select>
+				</label>
+				<label>Date:
+					<br>
+					<input type="text" id="date">
+				</label>
+				<button id="btnAddBook">Add Book</button>
+			</div>
+			<div id="catalog"></div>
+		</div>
+	</main>
+	<!--	Footer  -->
+	<footer>
+		<div class="foot-social">
+			<a href="https://www.facebook.com/iktklaster.kragujevac"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-google-plus-g"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
